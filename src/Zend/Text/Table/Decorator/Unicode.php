@@ -149,7 +149,7 @@ class Zend_Text_Table_Decorator_Unicode implements Zend_Text_Table_Decorator_Int
     protected function _uniChar($code)
     {
         if ($code <= 0x7F) {
-            $char = chr($code);
+            $char = chr($code & 0xFF);
         } elseif ($code <= 0x7FF) {
             $char = chr(0xC0 | $code >> 6)
                   . chr(0x80 | $code & 0x3F);

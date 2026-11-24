@@ -25,20 +25,12 @@ parameters:
             path: ./src/Zend/Text/Figlet.php
             count: 2
         -
-            message: '#Binary operation "&" between float\|int<0, 1>\|int<3, max>\|string\|null and 31 results in an error\.#'
-            path: ./src/Zend/Text/Figlet.php
-            count: 1
-        -
             message: '#Property Zend_Text_Figlet::\$_rightToLeft \(int\) does not accept float\|int\|string\|null\.#'
             path: ./src/Zend/Text/Figlet.php
             count: 1
         -
             message: '#Unreachable statement - code above always terminates\.#'
             path: ./src/Zend/Text/Table.php
-            count: 1
-        -
-            message: '#Call to sscanf contains 11 placeholders, 7 values given\.#'
-            path: ./src/Zend/Text/Figlet.php
             count: 1
         -
             message: '#Binary operation "\*" between 2 and float\|int\|string\|null results in an error\.#'

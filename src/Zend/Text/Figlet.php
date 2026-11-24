@@ -1028,7 +1028,7 @@ class Zend_Text_Figlet
             } elseif ($smush < 0) {
                 $this->_fontSmush = 0;
             } else {
-                $this->_fontSmush = (($smush & 31) | self::SM_SMUSH);
+                $this->_fontSmush = (((int) $smush & 31) | self::SM_SMUSH);
             }
         }
 
