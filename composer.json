@@ -1,5 +1,5 @@
 {
-    "name": "diablomedia/zendframework1-text",
+    "name": "gizmocraft/zendframework1-text",
     "description": "Zend Framework 1 Text component",
     "type": "library",
     "keywords": [
@@ -9,12 +9,38 @@
     "homepage": "http://framework.zend.com/",
     "license": "BSD-3-Clause",
     "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/gizmocraftcom/zf1-exception"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/gizmocraftcom/zf1-config"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/gizmocraftcom/zf1-json"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/gizmocraftcom/zf1-xml"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/gizmocraftcom/zf1-server"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/gizmocraftcom/zf1-loader"
+        }
+    ],
     "require": {
         "ext-iconv": "*",
-        "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0",
-        "diablomedia/zendframework1-exception": "^1.1.1",
-        "diablomedia/zendframework1-config": "^2.0.5",
-        "diablomedia/zendframework1-loader": "^1.0.5"
+        "php": ">=8.5",
+        "gizmocraft/zendframework1-exception": "^2.0.0",
+        "gizmocraft/zendframework1-config": "^3.0.0",
+        "gizmocraft/zendframework1-loader": "^2.0.0"
     },
     "autoload": {
         "psr-0": {
