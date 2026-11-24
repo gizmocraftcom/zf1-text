@@ -20,6 +20,7 @@
  * @version    $Id$
  */
 
+use PHPUnit\Framework\Attributes\Group;
 
 /**
  * @category   Zend
@@ -27,8 +28,8 @@
  * @subpackage UnitTests
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @group      Zend_Text
  */
+#[Group('Zend_Text')]
 class Zend_Text_MultiByteTest extends PHPUnit\Framework\TestCase
 {
     /**
@@ -244,27 +245,21 @@ class Zend_Text_MultiByteTest extends PHPUnit\Framework\TestCase
         $this->assertEquals('äääöö', $text);
     }
 
-    /**
-     * @group ZF-12186
-     */
+    #[Group('ZF-12186')]
     public function testPadInputLongerThanPadLength()
     {
         $text = Zend_Text_MultiByte::strPad('äääöö', 2, 'ö');
         $this->assertEquals('äääöö', $text);
     }
 
-    /**
-     * @group ZF-12186
-     */
+    #[Group('ZF-12186')]
     public function testPadInputSameAsPadLength()
     {
         $text = Zend_Text_MultiByte::strPad('äääöö', 5, 'ö');
         $this->assertEquals('äääöö', $text);
     }
 
-    /**
-     * @group ZF-12186
-     */
+    #[Group('ZF-12186')]
     public function testPadNegativePadLength()
     {
         $text = Zend_Text_MultiByte::strPad('äääöö', -2, 'ö');

@@ -20,6 +20,7 @@
  * @version    $Id$
  */
 
+use PHPUnit\Framework\Attributes\Group;
 
 /**
  * @category   Zend
@@ -27,8 +28,8 @@
  * @subpackage UnitTests
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @group      Zend_Text
  */
+#[Group('Zend_Text')]
 class Zend_Text_FigletTest extends PHPUnit\Framework\TestCase
 {
     public function testStandardAlignLeft()
@@ -106,8 +107,6 @@ class Zend_Text_FigletTest extends PHPUnit\Framework\TestCase
         $this->_equalAgainstFile($figlet->render($isoText, 'ISO-8859-15'), 'CorrectEncoding.figlet');
     }
 
-    /**
-     */
     public function testIncorrectEncoding()
     {
         $this->expectException(\Zend_Text_Figlet_Exception::class);
