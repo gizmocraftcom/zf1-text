@@ -1,7 +1,6 @@
 # Zend Framework 1 - Text
 
 [![Build](https://github.com/gizmocraftcom/zf1-text/workflows/Build/badge.svg?event=push)](https://github.com/gizmocraftcom/zf1-text/actions?query=workflow%3ABuild+event%3Apush)
-[![codecov](https://codecov.io/gh/gizmocraftcom/zf1-text/branch/master/graph/badge.svg)](https://codecov.io/gh/gizmocraftcom/zf1-text)
 [![Latest Stable Version](https://poser.pugx.org/gizmocraft/zendframework1-text/v/stable)](https://packagist.org/packages/gizmocraft/zendframework1-text)
 [![Total Downloads](https://poser.pugx.org/gizmocraft/zendframework1-text/downloads)](https://packagist.org/packages/gizmocraft/zendframework1-text)
 [![License](https://poser.pugx.org/gizmocraft/zendframework1-text/license)](https://packagist.org/packages/gizmocraft/zendframework1-text)
